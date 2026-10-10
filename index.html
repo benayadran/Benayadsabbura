@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>السبورة التفاعلية لشعبة التسيير والاقتصاد – للأستاذ بن عياد براهيم – ثانوية السايب بولرباح سيدي عقبة</title>
+<link rel="stylesheet" href="css/stylePAPA.css">
+</head>
+<body>
+<div class="strip"><b>السبورة التفاعلية لشعبة التسيير والاقتصاد – للأستاذ بن عياد براهيم – ثانوية السايب بولرباح سيدي عقبة</b><a href="mailto:brahimbenayad22@gmail.com" dir="ltr">brahimbenayad22@gmail.com</a></div>
+<div class="bar" role="toolbar" aria-label="أدوات السبورة">
+  <button class="b on" data-tool="pen"> قلم</button>
+  <button class="b" data-tool="hl"> ماركر</button>
+  <button class="b" data-tool="er"> ممحاة</button>
+  <span class="sep"></span>
+  <span id="sw" style="display:flex;gap:8px"></span>
+  <input id="sz" type="range" min="2" max="14" value="4" aria-label="سمك الخط" style="width:90px;direction:ltr">
+  <span class="sep"></span>
+  <button class="b" id="mode"> الرسم فوق القوالب</button>
+  <button class="b" id="undo"> تراجع</button>
+  <button class="b" id="clr"> مسح الرسم</button>
+  <select class="b" id="subj" aria-label="المادة"><optgroup label="المحاسبة"><option value="acc3">المحاسبة السنة الثالثة</option><option value="acc2">المحاسبة السنة الثانية</option></optgroup><optgroup label="الاقتصاد والمناجمنت"><option value="eco3">الاقتصاد والمناجمنت السنة الثالثة</option><option value="eco2">الاقتصاد والمناجمنت السنة الثانية</option></optgroup><optgroup label="القانون"><option value="law3">القانون السنة الثالثة</option><option value="law2">القانون السنة الثانية</option></optgroup></select>
+  <select class="b" id="tplSel" aria-label="القوالب"><option value=""> قوالب</option></select>
+  <button class="b" data-tab="acc"> الحسابات</button>
+  <button class="b" data-tab="calc"> حاسبة</button>
+  <select class="b" id="bgSel" aria-label="الخلفية"></select>
+  <button class="b" id="save"> حفظ صورة</button>
+  <button class="b" id="clk"> ساعة</button>
+  <button class="b" id="fs">⛶ ملء الشاشة</button>
+</div>
+<div id="wrap" class="board"><canvas id="cv"></canvas></div>
+<div id="drawer"></div>
+<script src="js/scriptPAPA.js"></script>
+</body>
+</html>
